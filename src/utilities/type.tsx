@@ -1,0 +1,10 @@
+export interface rowType {
+    [k: string]: string | number;
+}
+
+export interface TablePaginationActionsProps {
+    count: number;
+    page: number;
+    rowsPerPage: number;
+    onChangePage: (event: React.MouseEvent<HTMLButtonElement>, newPage: number) => void;
+}
